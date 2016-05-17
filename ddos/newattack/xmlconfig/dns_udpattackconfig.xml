@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ddos mode='signal'>
+<destIp type='ip'>172.16.110.25</destIp>
+<destPort>53</destPort>
+<getDomainIpTime>10</getDomainIpTime>
+<generalMess id='uniform'><startThreadNumber>1</startThreadNumber>
+<sendPacketNumber>10</sendPacketNumber>
+<packetTime random='false'><value>0</value><scope><from></from><to></to></scope><meth></meth></packetTime>
+<pulse><cycleTime></cycleTime><pulseTime></pulseTime><speed></speed></pulse>
+<attackTime>60</attackTime>
+</generalMess><styleList>
+<style id='udpflood'>
+<packetLength>1000</packetLength>
+<srcIpAddress random='true'><value></value><scope>10.0.0.5,10.0.0.6</scope><meth>1</meth></srcIpAddress>
+<srcPort random='false'><value>7001</value><scope></scope><meth></meth></srcPort>
+<dataHeader>
+<udpHeader><check>0</check></udpHeader>
+<ipHeader><versionihl></versionihl><tos></tos><tot_len></tot_len><id></id><frag_off></frag_off><ttl>6</ttl><protocol></protocol><check></check></ipHeader>
+</dataHeader>
+<data random='true'><value></value><scope>y,iLove,z,777,tiankong</scope><meth>1</meth></data>
+</style></styleList>
+</ddos>

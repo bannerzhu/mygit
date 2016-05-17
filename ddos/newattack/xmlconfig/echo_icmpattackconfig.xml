@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ddos mode='signal'>
+<destIp type='ip'>172.16.110.25</destIp>
+<destPort>80</destPort>
+<generalMess id='uniform'><startThreadNumber>1</startThreadNumber>
+<sendPacketNumber>10</sendPacketNumber>
+<packetTime random='false'><value>0</value><scope><from></from><to></to></scope><meth></meth></packetTime>
+<pulse><cycleTime></cycleTime><pulseTime></pulseTime><speed></speed></pulse>
+<attackTime>60</attackTime>
+</generalMess><styleList>
+<style id='icmpflood'>
+<packetLength>1000</packetLength>
+<srcIpAddress random='false'><value>10.0.0.2</value><scope></scope><meth></meth></srcIpAddress>
+<dataHeader>
+<icmpHeader><type>8</type><code>0</code><check></check></icmpHeader>
+<ipHeader><versionihl></versionihl><tos></tos><tot_len></tot_len><id></id><frag_off></frag_off><ttl>6</ttl><protocol></protocol><check></check></ipHeader>
+</dataHeader>
+<data random='true'><value></value><scope>y,iLove,z,777,tiankong</scope><meth>1</meth></data>
+</style></styleList>
+</ddos>
