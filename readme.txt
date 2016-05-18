@@ -5,3 +5,4 @@
 777777
 add master
 add in fenzhi1
+add in fenzhi1 finding bug
